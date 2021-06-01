@@ -1,0 +1,40 @@
+{
+  "name": "johnkegd-svelte",
+  "version": "1.0.0",
+  "description": "a personal library of svelte components",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "rollup": "^2.0.0",
+    "rollup-plugin-svelte": "^6.0.0",
+    "svelte": "^3.0.0"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "svelte": "src/index.js",
+  "scripts": {
+      "build": "rollup -c",
+      "dev": "rollup -c -w",
+      "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnkegd/svelte.git"
+  },
+  "keywords": [
+    "svelte",
+    "components"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
+  "author": {
+    "name": "Johnkegd cretive",
+    "email": "johnkegd@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnkegd/svelte/issues"
+  },
+  "homepage": "https://github.com/johnkegd/svelte#readme"
+}
