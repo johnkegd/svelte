@@ -1,2 +1,2 @@
-import Button from './SignButton.svelte';
+import Button from './Button.svelte';
 export default Button;
