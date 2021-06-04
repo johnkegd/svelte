@@ -1,0 +1,24 @@
+{
+  "name": "@johnkegd/graphicarts",
+  "version": "1.0.0",
+  "description": "svelte components - GraphicArts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/johnkegd/svelte.git"
+  },
+  "keywords": [
+    "svelte",
+    "components",
+    "johnkegd"
+  ],
+  "author": "johnkegd creative",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnkegd/svelte/issues"
+  },
+  "homepage": "https://github.com/johnkegd/svelte#readme"
+}

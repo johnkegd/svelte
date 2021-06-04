@@ -1,40 +1,50 @@
 {
   "name": "johnkegd-svelte",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a personal library of svelte components",
+  "scripts": {
+      "pages": "git checkout site -- && git rebase master && cd site && npm install && npm run export && cd .. && git add . && git commit -m 'chore: update built files' && git push origin $(git subtree split --prefix site/dist site):github-pages --force && git reset --hard HEAD^ && git push --force origin site && git checkout master"
+  },
+  "files": [
+    "base.css",
+    "styles.css"
+  ],
+  "keywords": [
+    "svelte",
+    "components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnkegd/svelte.git"
+  },
+  "author": {
+    "name": "Johnkegd cretive",
+    "email": "johnkegd@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnkegd/svelte/issues"
+  },
+  "homepage": "https://github.com/johnkegd/svelte#readme",
+
+  "dependencies": {
+    "@johnkegd/cards": "1.0.0",
+    "@johnkegd/buttons": "1.0.0",
+    "@johnkegd/common": "1.0.0",
+    "@johnkegd/forms": "1.0.0",
+    "@johnkegd/footers": "1.0.0",
+    "@johnkegd/headers": "1.0.0",
+    "@johnkegd/grahicArts": "1.0.0",
+    "@johnkegd/icons": "1.0.0",
+    "@johnkegd/navbars": "1.0.0",
+    "@johnkegd/sections": "1.0.0",
+    "@johnkegd/texboxs": "1.0.0",
+    "@johnkegd/dropdownlists": "1.0.0"
+  },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^9.0.0",
     "rollup": "^2.0.0",
     "rollup-plugin-svelte": "^6.0.0",
     "svelte": "^3.0.0"
-  },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "svelte": "src/index.js",
-  "scripts": {
-      "build": "rollup -c",
-      "dev": "rollup -c -w",
-      "prepublishOnly": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johnkegd/svelte.git"
-  },
-  "keywords": [
-    "svelte",
-    "components"
-  ],
-  "files": [
-    "src",
-    "dist"
-  ],
-  "author": {
-    "name": "Johnkegd cretive",
-    "email": "johnkegd@gmail.com"
-  },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/johnkegd/svelte/issues"
-  },
-  "homepage": "https://github.com/johnkegd/svelte#readme"
+  }
 }
