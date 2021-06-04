@@ -6,9 +6,7 @@
   "module": "dist/index.mjs",
   "svelte": "src/index.js",
   "scripts": {
-      "build": "rollup -c",
-      "dev": "rollup -c -w",
-      "prepublishOnly": "npm run build"
+      "pages": "git checkout site -- && git rebase master && cd site && npm install && npm run export && cd .. && git add . && git commit -m 'chore: update built files' && git push origin $(git subtree split --prefix site/dist site):gh-pages --force && git reset --hard HEAD^ && git push --force origin site && git checkout master"
   },
   "files": [
     "src",
@@ -31,6 +29,21 @@
     "url": "https://github.com/johnkegd/svelte/issues"
   },
   "homepage": "https://github.com/johnkegd/svelte#readme",
+
+  "dependencies": {
+    "@johnkegd/cards": "1.0.0",
+    "@johnkegd/buttons": "1.0.0",
+    "@johnkegd/common": "1.0.0",
+    "@johnkegd/forms": "1.0.0",
+    "@johnkegd/footers": "1.0.0",
+    "@johnkegd/headers": "1.0.0",
+    "@johnkegd/grahicArts": "1.0.0",
+    "@johnkegd/icons": "1.0.0",
+    "@johnkegd/navbars": "1.0.0",
+    "@johnkegd/sections": "1.0.0",
+    "@johnkegd/texboxs": "1.0.0",
+    "@johnkegd/dropdownlists": "1.0.0"
+  },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^9.0.0",
     "rollup": "^2.0.0",
