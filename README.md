@@ -1,7 +1,7 @@
 
 ---
 
-# johnkegd-svelte-component
+# johnkegd-svelte-component  NOT READY TO USE
 
 ```bash
 npm install johnkegd-svelte
