@@ -8,9 +8,6 @@
       "conventionalCommits": true
     }
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "packages": [
     "packages/*"
   ]

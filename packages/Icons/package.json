@@ -1,10 +1,13 @@
 {
   "name": "@johnkegd/icons",
-  "version": "1.0.4",
+  "version": "1.0.1",
   "description": "svelte components - Icons",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
