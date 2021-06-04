@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "command": {
     "version": {
       "allowBranch": [
@@ -9,7 +9,7 @@
     }
   },
   "publishConfig": {
-    "access":"public"
+    "access": "public"
   },
   "packages": [
     "packages/*"

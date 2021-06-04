@@ -1,6 +1,6 @@
 {
   "name": "@johnkegd/footers",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "svelte component - Footers",
   "main": "index.js",
   "scripts": {

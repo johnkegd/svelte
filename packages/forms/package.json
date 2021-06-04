@@ -1,6 +1,6 @@
 {
   "name": "@johnkegd/forms",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "svelte component - Forms",
   "main": "index.js",
   "scripts": {
