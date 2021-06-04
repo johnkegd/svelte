@@ -1,3 +1,3 @@
 /node_modules/
 /dist/
-lerna-logs.log
+lerna-debug.log
