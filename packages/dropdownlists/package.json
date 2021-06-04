@@ -1,6 +1,6 @@
 {
   "name": "@johnkegd/dropdownlists",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "svelte component - Dropdownlists",
   "main": "index.js",
   "scripts": {

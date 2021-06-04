@@ -1,6 +1,6 @@
 {
   "name": "@johnkegd/cards",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "svelte component - Card",
   "main": "index.js",
   "scripts": {
