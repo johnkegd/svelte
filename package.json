@@ -2,9 +2,6 @@
   "name": "johnkegd-svelte",
   "version": "1.0.1",
   "description": "a personal library of svelte components",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "svelte": "src/index.js",
   "scripts": {
       "pages": "git checkout site -- && git rebase master && cd site && npm install && npm run export && cd .. && git add . && git commit -m 'chore: update built files' && git push origin $(git subtree split --prefix site/dist site):gh-pages --force && git reset --hard HEAD^ && git push --force origin site && git checkout master"
   },
