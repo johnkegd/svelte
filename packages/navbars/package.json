@@ -1,6 +1,6 @@
 {
   "name": "@johnkegd/navbars",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "svelte components - Navbars",
   "main": "index.js",
   "scripts": {

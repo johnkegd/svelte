@@ -1,6 +1,6 @@
 {
   "name": "@johnkegd/textboxs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "svelte components - Texboxs",
   "main": "index.js",
   "scripts": {
