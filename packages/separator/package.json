@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/johnkegd/svelte#readme",
   "devDependencies": {
-    "@johnkegd/common": "^1.0.3"
+    "@johnkegd/common": "^1.0.2"
   }
 }

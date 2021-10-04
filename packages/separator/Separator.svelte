@@ -1,4 +1,5 @@
 <script>
+  import { Svg } from "@johnkegd/common";
   export let wrapper = true;
   export let wrapperStyles =
     "bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20";
@@ -9,24 +10,23 @@
   export let svgY = "0";
   export let polygonStyles = "text-white fill-current";
   export let polygonPoints = "2560 0 2560 100 0 100";
+
+  const svgSettings = {
+    svgStyles,
+    svgViewBox,
+    svgX,
+    svgY,
+  };
 </script>
 
 {#if wrapper === true}
-  <div
-    class={wrapperStyles}
-    component="tiene wrapper"
-    style="{wrapperInLine};"
-  />
+  <div class={wrapperStyles} style="{wrapperInLine};">
+    <Svg {...svgSettings}>
+      <polygon class={polygonStyles} points={polygonPoints} />
+    </Svg>
+  </div>
 {:else}
-  <svg
-    class={svgStyles}
-    xmlns="http://www.w3.org/2000/svg"
-    preserveAspectRatio="none"
-    version="1.1"
-    viewBox={svgViewBox}
-    x={svgX}
-    y={svgY}
-  >
+  <Svg {...svgSettings}>
     <polygon class={polygonStyles} points={polygonPoints} />
-  </svg>
+  </Svg>
 {/if}

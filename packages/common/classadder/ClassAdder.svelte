@@ -14,7 +14,7 @@
 <script>
   import { onDestroy, getContext, setContext } from "svelte";
   import { get_current_component } from "svelte/internal";
-  import { forwardEventsBuilder, classMap } from "./internal/index.js";
+  import { forwardEventsBuilder, classMap } from "../internal/index.js";
   export let use = [];
   let className = "";
   export { className as class };

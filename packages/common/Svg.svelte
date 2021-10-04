@@ -1,6 +1,6 @@
 <script>
   import { get_current_component } from "svelte/internal";
-  import { forwardEventsBuilder, useActions } from "../internal/index.js";
+  import { forwardEventsBuilder, useActions } from "./internal/index.js";
 
   export let svgStyles = "absolute bottom-0 overflow-hidden";
   export let svgViewBox = "0 0 2560 100";

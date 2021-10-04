@@ -3,7 +3,7 @@
   import { get_current_component } from "svelte/internal";
   import { forwardEventsBuilder, classMap } from "./internal/index.js";
   import I from "./elements/I.svelte";
-  import Svg from "./elements/Svg.svelte";
+  import Svg from "./Svg.svelte";
   const forwardEvents = forwardEventsBuilder(get_current_component());
   export let use = [];
   let className = "";
