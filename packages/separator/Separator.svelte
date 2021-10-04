@@ -12,19 +12,11 @@
 </script>
 
 {#if wrapper === true}
-  <div class={wrapperStyles} component="tiene wrapper" style="{wrapperInLine};">
-    <svg
-      class={svgStyles}
-      xmlns="http://www.w3.org/2000/svg"
-      preserveAspectRatio="none"
-      version="1.1"
-      viewBox={svgViewBox}
-      x={svgX}
-      y={svgY}
-    >
-      <polygon class={polygonStyles} points={polygonPoints} />
-    </svg>
-  </div>
+  <div
+    class={wrapperStyles}
+    component="tiene wrapper"
+    style="{wrapperInLine};"
+  />
 {:else}
   <svg
     class={svgStyles}

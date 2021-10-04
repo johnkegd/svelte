@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/johnkegd/svelte/issues"
   },
-  "homepage": "https://github.com/johnkegd/svelte#readme"
+  "homepage": "https://github.com/johnkegd/svelte#readme",
+  "devDependencies": {
+    "@johnkegd/common": "^1.0.3"
+  }
 }
