@@ -1,7 +1,7 @@
 {
-  "name": "@johnkegd/graphicarts",
-  "version": "1.0.3",
-  "description": "svelte components - GraphicArts",
+  "name": "@johnkegd/separator",
+  "version": "1.0.1",
+  "description": "Test svelte component - Separator",
   "type": "module",
   "module": "index.js",
   "scripts": {
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/johnkegd/svelte/issues"
   },
-  "homepage": "https://github.com/johnkegd/svelte#readme"
+  "homepage": "https://github.com/johnkegd/svelte#readme",
+  "devDependencies": {
+    "@johnkegd/common": "^1.0.3"
+  }
 }
