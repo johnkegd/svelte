@@ -1,11 +1,13 @@
 <script>
   import { get_current_component } from "svelte/internal";
+  import { forwardEventsBuilder, useActions } from "../internal/index.js";
+
   export let svgStyles = "absolute bottom-0 overflow-hidden";
   export let svgViewBox = "0 0 2560 100";
   export let svgX = "0";
   export let svgY = "0";
-  export let polygonStyles = "text-white fill-current";
-  export let polygonPoints = "2560 0 2560 100 0 100";
+
+  const forwardEvents = forwardEventsBuilder(get_current_component());
 
   export let use = [];
   let element = null;
@@ -27,5 +29,5 @@
   x={svgX}
   y={svgY}
 >
-  <polygon class={polygonStyles} points={polygonPoints} />
+  <slot />
 </svg>

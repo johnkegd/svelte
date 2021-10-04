@@ -1,4 +1,4 @@
-import ClassAdder, { internals } from '../ClassAdder.svelte';
+import ClassAdder, { internals } from './ClassAdder.svelte';
 
 const defaults = { ...internals };
 
