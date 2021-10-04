@@ -1,6 +1,6 @@
 <script>
   import { createPopper } from "@popperjs/core";
-  import { clickOutside } from "../utils/clickOutside";
+  import { clickOutside } from "./clickOutside";
   let dropdownPopoverShow = false;
   let btnDropdownRef;
   let popoverDropdownRef;
@@ -27,7 +27,7 @@
     bind:this={btnDropdownRef}
     on:click|preventDefault={toggleDropdown}
   >
-    Demo Pages
+    Menu
   </a>
   <div
     bind:this={popoverDropdownRef}

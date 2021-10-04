@@ -1,8 +1,9 @@
 {
   "name": "@johnkegd/common",
-  "version": "1.0.2",
-  "description": "svelte component - Common",
-  "main": "index.js",
+  "version": "1.0.3",
+  "description": "Test svelte component - Common",
+  "type": "module",
+  "module": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

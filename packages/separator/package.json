@@ -1,7 +1,7 @@
 {
-  "name": "@johnkegd/graphicarts",
-  "version": "1.0.3",
-  "description": "svelte components - GraphicArts",
+  "name": "@johnkegd/separator",
+  "version": "1.0.1",
+  "description": "Test svelte component - Separator",
   "type": "module",
   "module": "index.js",
   "scripts": {
