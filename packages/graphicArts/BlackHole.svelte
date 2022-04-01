@@ -1,35 +1,52 @@
 <script>
   import { onMount } from "svelte";
+  export const config = {
+    particlesNumber: 20,
+    fillStyle: "rgba(0,0,0,0.5)",
+    reDrawFillStyle: null,
+    chaos: 350,
+  };
   let canvas;
   let innerWidth;
   let innerHeight;
   var particles = [];
   let ctx;
+  let start,
+    oldTimeStamp,
+    speed = 10000;
 
   onMount(() => {
     ctx = canvas.getContext("2d");
     let frame = requestAnimationFrame(loop);
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
-    ctx.fillStyle = "rgba(0,0,0,0.5)";
+    ctx.fillStyle = config.fillStyle;
     ctx.fillRect(0, 0, innerWidth, innerHeight);
 
-    function loop() {
+    function loop(timeStamp) {
       frame = requestAnimationFrame(loop);
-      ctx.fillStyle = "rgba(0,0,0,0.5)";
-      ctx.fillRect(0, 0, innerWidth, innerHeight);
-
-      for (var i = 0; i < 20; i++) {
-        particles.push(new Particle());
+      if (start === undefined) {
+        start = timeStamp;
+        oldTimeStamp = timeStamp + speed;
       }
+      if (timeStamp >= oldTimeStamp) {
+        oldTimeStamp = timeStamp + speed;
 
-      for (var i in particles) {
-        particles[i].draw();
-        particles[i].update();
+        ctx.fillStyle = config.fillStyle;
+        ctx.fillRect(0, 0, innerWidth, innerHeight);
 
-        if (particles[i].life >= particles[i].lifemax) {
-          delete particles[i];
+        for (var i = 0; i < config.particlesNumber; i++) {
+          particles.push(new Particle());
         }
+
+        for (let i in particles) {
+          particles[i].draw();
+          particles[i].update();
+
+          if (particles[i].life >= particles[i].lifemax) {
+            delete particles[i];
+          }
+        }
+      } else {
+        oldTimeStamp = timeStamp;
       }
     }
     return () => {
@@ -41,7 +58,7 @@
     constructor() {
       this.x = Math.random() * innerWidth;
       this.y = Math.random() * innerHeight;
-      this.vx = 0;
+      this.vx = 10;
       this.vy = 0;
       this.ax = 0;
       this.ay = 0;
@@ -49,22 +66,22 @@
       this.lifemax = 75;
       this.gravity = 0;
       this.fade = 1;
-      this.w = 3;
-      this.h = 3;
+      this.w = 2;
+      this.h = 2;
 
       this.draw = function () {
-        ctx.fillStyle = "rgba(255,255,255," + this.fade + ")";
+        ctx.fillStyle = "rgba(0,115,213," + this.fade + ")";
         ctx.fillRect(this.x, this.y, this.w, this.h);
       };
 
       this.update = function () {
-        this.w += 0.1;
-        this.h += 0.1;
+        this.w += 0.04;
+        this.h += 0.04;
         this.vy += this.gravity;
         this.vx += this.ax;
         this.vy += this.ay;
-        this.vx *= 0.91;
-        this.vy *= 0.91;
+        this.vx *= 0.92;
+        this.vy *= 0.92;
         this.y += this.vy;
         this.x += this.vx;
         this.life++;
@@ -88,7 +105,7 @@
         let deltaX = this.x - innerWidth / 2;
         let deltaY = this.y - innerHeight / 2;
 
-        if (Math.sqrt(deltaX ** 2 + deltaY ** 2) < 50) {
+        if (Math.sqrt(deltaX ** 2 + deltaY ** 2) < config.chaos) {
           this.fade -= 0.1;
           this.w -= 1;
           this.h -= 1;
@@ -99,10 +116,14 @@
 </script>
 
 <svelte:window bind:innerHeight bind:innerWidth />
-<canvas bind:this={canvas} />
+<canvas bind:this={canvas} width={innerWidth} height={innerHeight} />
 
 <style>
   canvas {
-    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: -999;
   }
 </style>
