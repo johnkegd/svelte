@@ -10,3 +10,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ## 1.0.3 (2021-10-03)
 
 **Note:** Version bump only for package @johnkegd/graphicarts
+
+## 1.0.4 (2021-10-03)
+
+**Note:** Version bump only for package @johnkegd/graphicarts
+
+- GraphicArts blackHole component config prop object
+- Navigation component styiling
