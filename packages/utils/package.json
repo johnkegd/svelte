@@ -1,7 +1,7 @@
 {
-  "name": "@johnkegd/utils",
+  "name": "@johnkegd/graphicarts",
   "version": "1.0.4",
-  "description": "svelte components - Utils",
+  "description": "svelte components - GraphicArts",
   "type": "module",
   "module": "index.js",
   "scripts": {
