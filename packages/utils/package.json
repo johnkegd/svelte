@@ -1,6 +1,6 @@
 {
   "name": "@johnkegd/utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "svelte components - utils",
   "type": "module",
   "module": "index.js",
@@ -29,6 +29,7 @@
     "url": "https://github.com/johnkegd/svelte/issues"
   },
   "homepage": "https://github.com/johnkegd/svelte#readme",
+  "main": "index.js",
   "files": [
     "Animation.js",
     "ClassMap.js",
