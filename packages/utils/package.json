@@ -1,6 +1,6 @@
 {
   "name": "@johnkegd/utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "svelte components - utils",
   "type": "module",
   "module": "index.js",
@@ -19,10 +19,26 @@
     "components",
     "johnkegd"
   ],
-  "author": "johnkegd creative",
+  "author": {
+    "name:": "John Garcia - Johnkegd",
+    "email": "johnkegd@gmail.com",
+    "url": "https://johnkegd.netlify.app"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/johnkegd/svelte/issues"
   },
-  "homepage": "https://github.com/johnkegd/svelte#readme"
+  "homepage": "https://github.com/johnkegd/svelte#readme",
+  "files": [
+    "Animation.js",
+    "ClassMap.js",
+    "ClickOutside.js",
+    "threejs/Time.js",
+    "threejs/Sizes.js",
+    "lib/create-date.js",
+    "threejs/Resources.js",
+    "threejs/EventEmitter.js",
+    "threejs/Debugjs",
+    "index.js"
+  ]
 }

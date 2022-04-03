@@ -1,4 +1,4 @@
-import EventEmitter from './EventEmitter';
+import EventEmitter from './threejs/EventEmitter';
 import ClickOutside from './ClickOutside';
 import ClassMap from './ClassMap';
 import Debug from './threejs/Debug';

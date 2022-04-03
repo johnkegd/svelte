@@ -1,4 +1,4 @@
-import EventEmitter from '../EventEmitter.js'
+import EventEmitter from './EventEmitter.js'
 
 export default class Resources extends EventEmitter {
     constructor(sources, THREE, Loader) {
