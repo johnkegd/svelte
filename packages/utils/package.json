@@ -36,6 +36,8 @@
     "ClickOutside.js",
     "threejs/Time.js",
     "threejs/Sizes.js",
+    "threejs/GeometryDefaultGui.js",
+    "threejs/GeometryUpdater",
     "threejs/Resources.js",
     "threejs/EventEmitter.js",
     "threejs/Debug.js",

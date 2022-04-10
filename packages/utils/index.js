@@ -5,5 +5,5 @@ import Debug from './threejs/Debug.js';
 import Resources from './threejs/Resources.js';
 import Sizes from './threejs/Sizes.js';
 import Time from './threejs/Time.js';
-
-export { EventEmitter, ClickOutside, ClassMap, Debug, Resources, Sizes, Time };
+import GeometryDefaultGui from './threejs/GeometryDefaultGui.js';
+export { EventEmitter, ClickOutside, ClassMap, Debug, Resources, Sizes, Time, GeometryDefaultGui };
