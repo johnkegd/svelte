@@ -1,6 +1,6 @@
 {
   "name": "@johnkegd/utils",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "svelte components - utils",
   "type": "module",
   "module": "index.js",
@@ -36,8 +36,9 @@
     "ClickOutside.js",
     "threejs/Time.js",
     "threejs/Sizes.js",
+    "threejs/geometriesProperties.js",
     "threejs/GeometryDefaultGui.js",
-    "threejs/GeometryUpdater",
+    "threejs/GeometryUpdater.js",
     "threejs/Resources.js",
     "threejs/EventEmitter.js",
     "threejs/Debug.js",

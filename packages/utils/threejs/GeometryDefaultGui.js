@@ -1,4 +1,4 @@
-import propertiesConfig from './geometriesProperties.json';
+import propertiesConfig from './geometriesProperties.js';
 import GeometryUpdater from "./GeometryUpdater.js";
 
 export default class GeometryDefaultGui {
