@@ -1,6 +1,6 @@
 {
   "name": "@johnkegd/utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "svelte components - utils",
   "type": "module",
   "module": "index.js",
@@ -20,7 +20,7 @@
     "johnkegd"
   ],
   "author": {
-    "name:": "John Garcia - Johnkegd",
+    "name:": "John Garcia",
     "email": "johnkegd@gmail.com",
     "url": "https://johnkegd.netlify.app"
   },
